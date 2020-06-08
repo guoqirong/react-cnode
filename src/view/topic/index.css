@@ -1,0 +1,45 @@
+
+.topic-list .reply-count,.topic-tab,.topic-title,.created-time {
+  height: 34px;
+  line-height: 34px;
+  margin-top: -2px;
+  float: left;
+}
+.topic-list .reply-count {
+  width: 60px;
+  font-size: 12px;
+  text-align: center;
+}
+.topic-list .reply-count .count-of-replies {
+  color: #9e78c0;
+}
+.topic-list .reply-count .count-of-visits {
+  color: #b4b4b4;
+}
+.topic-list .topic-tab {
+  width: 80px;
+}
+.topic-list .topic-title {
+  width: calc(100% - 60px - 80px - 90px);
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.topic-list .created-time {
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+.topic-list .item-body:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.right-list a {
+  color: #778087;
+}
+.right-list .my-topics-replies-card .ant-card-body {
+  padding: 0;
+}
