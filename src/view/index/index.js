@@ -19,12 +19,13 @@ class Index extends Component {
   }
 
   UNSAFE_componentWillMount ()  {
+    // 获取用户消息数量
     if (this.props.user.token || getLocalStorage('token')) {
-      console.log(this.props.user.token || getLocalStorage('token'))
       this.props.getmessagecount({token: this.props.user.token || getLocalStorage('token')});
     }
   }
 
+  // 退出登录
   goLoginOut () {
     localStorage.clear();
     window.history.go(0);
@@ -88,6 +89,7 @@ class Index extends Component {
   }
 }
 
+// 设置props参数
 Index.propTypes = {
   user: PropTypes.object.isRequired,
   getmessagecount: PropTypes.func.isRequired

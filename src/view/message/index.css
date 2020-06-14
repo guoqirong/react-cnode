@@ -1,0 +1,20 @@
+.message-list .ant-card-extra {
+  padding: 0;
+}
+.message-list .message-topic-title {
+  background-color: #b4b4b4;
+  padding: 4px;
+}
+.message-list .message-title {
+  width: calc(100% - 80px);
+  display: inline-block;
+}
+.message-list .message-button {
+  float: right;
+}
+.message-list .right-list a {
+  color: #778087;
+}
+.message-list .right-list .my-topics-replies-card .ant-card-body {
+  padding: 0;
+}

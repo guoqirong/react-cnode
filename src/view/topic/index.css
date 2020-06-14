@@ -1,4 +1,7 @@
 
+.topic-list .left-list .ant-card-body {
+  padding: 0 12px;
+}
 .topic-list .reply-count,.topic-tab,.topic-title,.created-time {
   height: 34px;
   line-height: 34px;

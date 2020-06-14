@@ -4,10 +4,9 @@ import { Card, List, Avatar, Tag, Pagination } from 'antd';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-import { getLocalStorage } from '../../utils/index'
 import { changetabitem } from '../../actions/index/index'
 import { getuserinfo } from '../../actions/user/index'
-import { formatDate } from '../../utils/index'
+import { formatDate, getLocalStorage } from '../../utils/index'
 
 import './index.css'
 
@@ -19,6 +18,7 @@ class IndexTopic extends Component {
   }
 
   UNSAFE_componentWillMount ()  {
+  // 初始化获取数据
     let changetab = { key: 'all', name: '全部' };
     this.props.changetabitem(changetab);
     if (this.props.user.loginname || getLocalStorage('userName')) {
@@ -26,6 +26,7 @@ class IndexTopic extends Component {
     }
   }
 
+  // 页签切换
   onTabChange (key) {
     let changetab = {};
     for (let i = 0; i < this.props.index.tabList.length; i++) {
@@ -34,10 +35,12 @@ class IndexTopic extends Component {
     this.props.changetabitem(changetab);
   }
 
+  // 列表项点击获取详情
   onItemClick (val) {
-    console.log(val)
+    this.props.history.push(`/detail?${val.id}`)
   }
 
+  // 页码切换
   onChangePage (val) {
     let obj = this.props.index.searchData;
     obj.page = val;
@@ -49,6 +52,7 @@ class IndexTopic extends Component {
       <div className="topic-list">
         <Card
           size="small"
+          className="left-list"
           style={{ width: 'calc(100% - 300px)', display: 'inline-block' }}
           tabList={this.props.index.tabList}
           activeTabKey={this.state.noTitleKey}
@@ -59,6 +63,7 @@ class IndexTopic extends Component {
           <List
             size="small"
             style={{ width: '100%' }}
+            locale={{ emptyText: '暂无数据' }}
             dataSource={this.props.index.dataList}
             loading={this.props.index.listLoading}
             footer={
@@ -142,6 +147,7 @@ class IndexTopic extends Component {
   }
 }
 
+// 设置props参数
 IndexTopic.propTypes = {
   index: PropTypes.object.isRequired,
   user: PropTypes.object.isRequired,

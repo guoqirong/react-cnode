@@ -1,5 +1,61 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# react - cnode框架搭建
+
+
+## 1.安装
+
+npm install
+
+## 2.运行
+
+npm start
+
+## 3.编译
+
+npm run build
+
+## 4.目录结构
+```
+|
+├── public                 公开资源目录
+|   ├── favicon.icon       title图标
+|   ├── index.html         静态索引页面
+|   └── 、、
+├── src                    源码目录
+|   ├── actions            redux里的actions
+|   ├── assets             静态资源目录
+|   ├── components         公共组件目录
+|   ├── constants          常量设置目录
+|   ├── reducers           redux里的reducers
+|   ├── store              redux里的store
+|   ├── utils              公共方法库
+|   ├── view               页面文件目录
+|   |   ├── index          index 页面目录
+|   |   |   ├── index.js   index 页面逻辑
+|   |   |   └── index.css  index 页面样式
+|   ├── index.js           项目h5入口文件
+|   ├── App.js             项目入口文件
+|   └── serviceWorker.js   项目运行配置
+├── package.json           资源包配置文件
+└── README.md              项目说明
+```
+
+## 5.效果图
+
+
+![首页](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/index.jpg)
+
+![首页1](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/index1.jpg)
+
+![登录]](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/menu1.jpg)
+
+![详情](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/detail.jpg)
+
+![消息](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/message.jpg)
+
+![收藏](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/collect.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:

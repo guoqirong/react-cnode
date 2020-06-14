@@ -1,0 +1,67 @@
+.detail-list .site-page-header {
+  border-bottom: 1px solid rgb(235, 237, 240);
+  padding: 8px 18px;
+}
+.detail-list .my-topic-title .detail-topic-title {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 8px;
+}
+.detail-list .my-topic-title .detail-topic-title .title-left {
+  width: calc(100% - 40px);
+  float: left;
+}
+.detail-list .my-topic-title .detail-topic-title .title-left .topic-title-tab {
+  padding-top: 4px;
+  width: 80px;
+  margin-right: 10px;
+  float: left;
+}
+.detail-list .my-topic-title .detail-topic-title .title-left .title-name {
+  width: calc(100% - 90px);
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+}
+.detail-list .my-topic-title .detail-topic-title .title-left .topic-title-desc {
+  clear: both;
+  font-size: 12px;
+  color: #838383;
+  margin-bottom: 14px;
+}
+.detail-list .my-topic-title .detail-topic-title .title-right {
+  width: 40px;
+  float: right;
+}
+.detail-list .my-topic-title .detail-topic-title .topic-content {
+  clear: both;
+}
+
+.detail-list .replie-item {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 8px;
+}
+.detail-list .replie-item .replie-user-img {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.detail-list .replie-item .replie-title {
+  width: calc(100% - 50px);
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+}
+.detail-list .replie-item .replie-desc {
+  width: calc(100% - 50px);
+  float: left;
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.detail-list .replie-item .replie-content {
+  clear: both;
+}
