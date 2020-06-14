@@ -48,7 +48,7 @@ npm run build
 
 ![首页1](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/index1.jpg)
 
-![登录]](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/menu1.jpg)
+![登录](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/menu1.jpg)
 
 ![详情](https://github.com/guoqirong/taro-cnode/blob/master/demo-screenshot/detail.jpg)
 
