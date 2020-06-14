@@ -31,6 +31,13 @@ let routes = [
       loader: () => import('../view/login/index'),
       loading: Loading,
     })
+  },
+  {
+    path: "/detail",
+    component: Loadable({
+      loader: () => import('../view/detail/index'),
+      loading: Loading,
+    })
   }
 ];
 
