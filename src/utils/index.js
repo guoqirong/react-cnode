@@ -4,29 +4,29 @@
  * @param {*} fmt
  */
 export function formatDate (dateStr, fmt) {
-  let date = new Date(dateStr)
+  let date = new Date(dateStr);
   if (/(y+)/.test(fmt)) {
-    fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
+    fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
   }
   let o = {
-    'M+': date.getMonth() + 1,
-    'd+': date.getDate(),
-    'h+': date.getHours(),
-    'm+': date.getMinutes(),
-    's+': date.getSeconds()
-  }
+    "M+": date.getMonth() + 1,
+    "d+": date.getDate(),
+    "h+": date.getHours(),
+    "m+": date.getMinutes(),
+    "s+": date.getSeconds()
+  };
   for (let k in o) {
     if (new RegExp(`(${k})`).test(fmt)) {
-      let str = o[k] + ''
-      fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? str : padLeftZero(str))
+      let str = o[k] + "";
+      fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? str : padLeftZero(str));
     }
   }
-  return fmt
+  return fmt;
 }
 
 // 补零函数
 function padLeftZero (str) {
-  return ('00' + str).substr(str.length)
+  return ("00" + str).substr(str.length);
 }
 
 /**
@@ -35,7 +35,7 @@ function padLeftZero (str) {
  * @param {*} val 
  */
 export function setLocalStorage (key, val) {
-  localStorage.setItem(key, val)
+  localStorage.setItem(key, val);
 }
 
 /**
@@ -43,5 +43,5 @@ export function setLocalStorage (key, val) {
  * @param {*} key 
  */
 export function getLocalStorage (key) {
-  return localStorage.getItem(key)
+  return localStorage.getItem(key);
 }

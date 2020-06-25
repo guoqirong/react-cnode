@@ -1,6 +1,9 @@
 .message-list .ant-card-extra {
   padding: 0;
 }
+.message-list .reply-content {
+  width: 100%;
+}
 .message-list .message-topic-title {
   background-color: #b4b4b4;
   padding: 4px;
