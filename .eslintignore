@@ -1,0 +1,6 @@
+/build/
+/node_modules/
+/config/
+/scripts/
+/*.js
+/src/App.text.js
