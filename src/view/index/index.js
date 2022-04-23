@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Layout, Badge } from "antd";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { BrowserRouter as Router, Link, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter as Router, Link, Route, Switch, Redirect } from "react-router-dom";
 import { getLocalStorage } from "../../utils/index";
 import { getmessagecount } from "../../actions/user/index";
 
