@@ -19,8 +19,8 @@ class IndexCollect extends Component {
   UNSAFE_componentWillMount ()  {
     // 获取收藏列表和用户信息
     if (this.props.user.token || getLocalStorage("token")) {
-      this.props.getcollectlist({userName: this.props.user.loginname || getLocalStorage("userName")});
-      this.props.getuserinfo({userName: this.props.user.loginname || getLocalStorage("userName")});
+      this.props.getcollectlist({userName: this.props.user.loginname || getLocalStorage("loginname")});
+      this.props.getuserinfo({userName: this.props.user.loginname || getLocalStorage("loginname")});
     } else {
       this.props.history.push("/");
     }

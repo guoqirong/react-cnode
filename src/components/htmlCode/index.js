@@ -22,7 +22,10 @@ class  HtmlCode extends Component  {
         str = str.replace(arr[i], img);
       }
     }
-    return str;
+    str.replace(/“|”/g, "\"");
+    str = str.replace(/href="+(\/.?user.?\/|user.?\/)/g, "href=\"./#/user/");
+    str = str.replace(/&lt;/g, "<");
+    return str.replace(/&gt;/g, ">");
   }
 
   render() {

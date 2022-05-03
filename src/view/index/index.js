@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { Layout, Badge } from "antd";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { HashRouter as Router, Link, Route, Switch, Redirect } from "react-router-dom";
+import { Link, Route, Switch, Redirect } from "react-router-dom";
 import { getLocalStorage } from "../../utils/index";
 import { getmessagecount } from "../../actions/user/index";
+import Router from "../../components/router";
 
 import routes from "../../router/index";
 
@@ -33,7 +34,7 @@ class Index extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={window.__POWERED_BY_QIANKUN__ ? "/#/react-cnode" : "/"}>
         <Layout id="components-layout-index">
           <Header style={{ width: "100%" }}>
             <div className="site-header">

@@ -21,8 +21,8 @@ class IndexTopic extends Component {
   // 初始化获取数据
     let changetab = { key: "all", name: "全部" };
     this.props.changetabitem(changetab);
-    if (this.props.user.loginname || getLocalStorage("userName")) {
-      this.props.getuserinfo({userName: this.props.user.loginname || getLocalStorage("userName")});
+    if (this.props.user.loginname || getLocalStorage("loginname")) {
+      this.props.getuserinfo({userName: this.props.user.loginname || getLocalStorage("loginname")});
     }
   }
 

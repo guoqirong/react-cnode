@@ -61,7 +61,7 @@ export const accesstoken = (data) => {
       };
       if (res.success) {
         setLocalStorage("token", data.token);
-        setLocalStorage("userName", res.loginname);
+        setLocalStorage("loginname", res.loginname);
         dispatch(setUserData(resData));
       }
     }).catch((e) => {

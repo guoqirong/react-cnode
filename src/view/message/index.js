@@ -20,7 +20,7 @@ class IndexMessage extends Component {
     // 获取消息列表和用户信息
     if (this.props.user.token || getLocalStorage("token")) {
       this.props.getmessagelist({token: this.props.user.token || getLocalStorage("token")});
-      this.props.getuserinfo({userName: this.props.user.loginname || getLocalStorage("userName")});
+      this.props.getuserinfo({userName: this.props.user.loginname || getLocalStorage("loginname")});
     } else {
       this.props.history.push("/");
     }
