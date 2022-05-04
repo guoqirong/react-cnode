@@ -32,7 +32,7 @@ const addCustomize = () => config => {
       library: `${name}-[name]`,
       libraryTarget: 'umd',
       jsonpFunction: `webpackJsonp_${name}`,
-      globalObject: 'window',
+      // globalObject: 'window',
     }
   };
 }
