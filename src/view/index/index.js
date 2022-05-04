@@ -34,7 +34,7 @@ class Index extends Component {
 
   render() {
     return (
-      <Router basename={window.__POWERED_BY_QIANKUN__ ? "/#/react-cnode" : "/"}>
+      <Router parentName={this.props.parentName}>
         <Layout id="components-layout-index">
           <Header style={{ width: "100%" }}>
             <div className="site-header">
@@ -93,7 +93,8 @@ class Index extends Component {
 // 设置props参数
 Index.propTypes = {
   user: PropTypes.object.isRequired,
-  getmessagecount: PropTypes.func.isRequired
+  getmessagecount: PropTypes.func.isRequired,
+  parentName: PropTypes.string
 };
 
 export default connect((state) => {

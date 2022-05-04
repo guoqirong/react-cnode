@@ -23,7 +23,7 @@ serviceWorker.unregister();
 function render(props) {
   const { container } = props;
   ReactDOM.render(<Provider store={store}>
-    <App />
+    <App parentName={props.userPro} />
   </Provider>,
   container ? container.querySelector("#root") : document.querySelector("#root"));
 }
