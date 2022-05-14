@@ -34,7 +34,7 @@ class  HtmlCode extends Component  {
       imgContent = this.imgContent(this.props.data);
     }
     return (
-      <div style={{"overflow-wrap": "break-word"}} dangerouslySetInnerHTML={{__html: imgContent}}></div>
+      <div style={{overflowWrap: "break-word"}} dangerouslySetInnerHTML={{__html: imgContent}}></div>
     );
   }
 }

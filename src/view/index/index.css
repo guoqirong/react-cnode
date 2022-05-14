@@ -33,3 +33,6 @@
 .navbar-link span a:hover,.navbar-link span span:hover {
   color: white!important;
 }
+.components-goback {
+  bottom: 100px;
+}

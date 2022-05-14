@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 class Loading extends Component {
   render() {
     return (
-      <div style={{width: "90vw", height: "80vh"}}>
-        <Spin tip="Loading..." size="large" style={{width: "90vw", height: "80vh"}}>
+      <div style={{width: "90%", height: "80vh"}}>
+        <Spin tip="Loading..." size="large" style={{width: "100%", height: "80vh"}}>
           { this.props.children }
         </Spin>
       </div>

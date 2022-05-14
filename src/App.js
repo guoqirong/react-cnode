@@ -4,7 +4,9 @@ import Index from "./view/index/index";
 function App(props) {
   const { parentName } = props ?? {};
   return (
-    <Index parentName={parentName} />
+    <div id="app">
+      <Index parentName={parentName} />
+    </div>
   );
 }
 

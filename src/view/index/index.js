@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Layout, Badge } from "antd";
+import { Layout, Badge, BackTop } from "antd";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Link, Route, Switch, Redirect } from "react-router-dom";
@@ -85,6 +85,7 @@ class Index extends Component {
             <div>CNode 社区版权归xxxxxx所有</div>
           </Footer>
         </Layout>
+        <BackTop className="components-goback" target={() => document.getElementById("app") ?? window} />
       </Router>
     );
   }
